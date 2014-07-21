@@ -1,12 +1,8 @@
-import os
-from flask import Flask
+# Put all your views here.
+from HipsterStore import app
 from flask import render_template
-
-app = Flask(__name__)
 
 @app.route('/')
 def landingPage():
     return render_template('landingPage.html')
 
-if __name__=='__main__':
-    app.run()
