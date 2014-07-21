@@ -5,4 +5,4 @@
 # web: gunicorn run:app
 
 from HipsterStore import app
-app.run(debug=True)
+app.run()
